@@ -1,6 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
+
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 import About from "./pages/About.jsx";
 import Home from "./pages/Home.jsx";
 import NotFound from "./pages/NotFound.jsx";
@@ -15,6 +18,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <Header />
     <RouterProvider router={router} />
+    <Footer />
   </StrictMode>
 );

@@ -2,3 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+header {
+  border-bottom: 1px solid black;
+}
+footer {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
