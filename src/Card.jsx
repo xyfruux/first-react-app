@@ -1,9 +1,9 @@
-function Card() {
+function Card({ title, description, imageUrl, altText }) {
   return (
     <div className="card">
-      <img src="" alt="Card Logos" />
-      <h2>Card</h2>
-      <p>Description</p>
+      <img src={imageUrl} alt={altText} />
+      <h2>{title}</h2>
+      <p>{description}</p>
     </div>
   );
 }
