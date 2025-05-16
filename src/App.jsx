@@ -30,14 +30,17 @@ function App() {
   return (
     <>
       <Header />
-      {lists.map((list) => (
-        <Card
-          title={list.title}
-          description={list.description}
-          imageUrl={list.imageUrl}
-          altText={list.altText}
-        />
-      ))}
+      <main>
+        {lists.map((list) => (
+          <Card
+            title={list.title}
+            description={list.description}
+            imageUrl={list.imageUrl}
+            altText={list.altText}
+          />
+        ))}
+      </main>
+
       <Footer />
     </>
   );
